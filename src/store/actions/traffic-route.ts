@@ -4,7 +4,7 @@ import axios from 'axios';
 import { TrafficRouteData } from '@store/types';
 import { Point } from '@types';
 
-const OSRM_API_URL = "http://router.project-osrm.org/route/v1/driving/";
+const OSRM_API_URL = "https://router.project-osrm.org/route/v1/driving/";
 
 export const loadTrafficRoute = createAsyncThunk<TrafficRouteData, Point[]>(
   'traffic-route/load',
