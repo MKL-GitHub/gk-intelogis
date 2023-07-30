@@ -1,8 +1,10 @@
 import { createSelector } from "reselect";
 
 import { RootState } from "@store";
-import { MapRoute } from "@store/types";
 
-const mapRoutesData = (state: RootState): MapRoute[] => state.mapRoutes.data;
+const mapData = (state: RootState) => ({
+  routes: state.mapRoutes.data,
+  trafficRouteData: state.trafficRoute.data
+});
 
-export const selectMapRoutesData = createSelector([mapRoutesData], data => data);
+export const selectMapData = createSelector([mapData], data => data);

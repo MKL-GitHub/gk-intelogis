@@ -5,7 +5,8 @@ import "leaflet/dist/leaflet.css";
 
 import { MapContent, MapRoutes } from "@components";
 import { useAppDispatch, useAppSelector } from "@store";
-import { loadTrafficRoute } from "@store/traffic-route";
+import { loadTrafficRoute } from "@store/actions";
+import { selectMapData } from "@store/selectors";
 import { Point } from "@types";
 import "./index.scss";
 
@@ -14,10 +15,7 @@ const zoom = 13;
 export const MapContainer: FC = () => {
   const appDispatch = useAppDispatch();
 
-  const select = useAppSelector((state) => ({
-    routes: state.mapRoutes.data,
-    trafficRouteData: state.trafficRoute.data,
-  }));
+  const select = useAppSelector(selectMapData);
 
   const callbacks = {
     onRouteClick: useCallback((points: Point[]) => {

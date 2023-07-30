@@ -1,8 +1,7 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
 
-import { mapRoutesReducer } from './map-routes';
-import { trafficRouteReducer } from './traffic-route';
+import { mapRoutesReducer, trafficRouteReducer } from './reducers';
 
 export const rootReducer = combineReducers({
   mapRoutes: mapRoutesReducer,

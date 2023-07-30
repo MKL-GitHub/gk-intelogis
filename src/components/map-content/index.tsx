@@ -4,8 +4,8 @@ import { TileLayer, Marker, Popup, useMap, Polyline } from "react-leaflet";
 import L from "leaflet";
 
 import { Point } from "@types";
+import { TrafficRouteData } from "@store/types";
 import "./index.scss";
-import { TrafficRouteData } from "@store/traffic-route";
 
 export interface MapContentProps {
   data: TrafficRouteData;

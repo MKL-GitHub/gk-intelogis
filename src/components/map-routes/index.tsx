@@ -1,8 +1,8 @@
 import { FC, memo, useState } from "react";
 import { Table } from "antd";
 
-import { MapRoute } from "@store/map-routes";
 import { Point } from "@types";
+import { MapRoute } from "@store/types";
 import "./index.scss";
 
 export interface MapRoutesProps {
