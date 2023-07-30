@@ -1,0 +1,15 @@
+.LeafletRoutes {
+  width: 19rem;
+
+  &-row {
+    cursor: pointer;
+
+    & ul {
+      padding-left: 1rem;
+    }
+
+    &_selected {
+      background-color: #dddddd;
+    }
+  }
+}

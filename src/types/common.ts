@@ -1,0 +1,1 @@
+export type Loading = 'none' | 'pending' | 'success' | 'error';

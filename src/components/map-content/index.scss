@@ -1,0 +1,23 @@
+.LeafletMap {
+  &-locationButton {
+    display: flex;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.3rem black;
+    cursor: pointer;
+
+    & > img {
+      width: 1.5rem;
+      filter: brightness(0) saturate(100%) invert(30%) sepia(0%) saturate(1102%)
+        hue-rotate(243deg) brightness(94%) contrast(87%);
+    }
+
+    &:hover {
+      & > img {
+        filter: brightness(0) saturate(100%) invert(12%) sepia(7%) saturate(9%)
+          hue-rotate(341deg) brightness(94%) contrast(86%);
+      }
+    }
+  }
+}
